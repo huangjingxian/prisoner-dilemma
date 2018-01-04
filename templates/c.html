@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Game</title>
+</head>
+	
+<style type="text/css">
+	/*.nickname{ width:1400px; height:150px;padding-top: 250px; border:0px solid #000; text-align:center;font-size:30px;} */
+	.nick{ position:relative;left:22em;top:3em;font-size: 1.3em} 
+	.nick1{ position:relative;left:22em;top:2em;font-size: 1.3em} 
+	.nick2{ position:relative;left:28em;top:2em;font-size: 1.3em} 
+	.nick3{position:relative;left:60em;top:-25em;}
+	.nick4{position:relative;left:2em;top:-20em;font-size: 1em}
+	.nick5{ position:relative;left:-22em;top:14em;font-size: 1.3em} 
+	.nick6{ position:relative;left:-25em;top:15em;font-size: 1.3em} 
+	.button1{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:relative;left:105px
+	}
+	.button2{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:relative;left:110px;
+	}
+</style>
+	
+	
+<body bgcolor="#fafcf5">
+
+	<div class="nick">
+		<img src="{{ url_for('static', filename='images/pr.png') }}" width = "400"/>
+	</div>
+	<div class="nick1">
+		<form action="form_action.asp" method="post" url="/c.html">
+			<button class="button1" type="submit" formmethod="post" formaction="/c.html" name = "bo" value="coop">合作</button>
+			<button class="button2"  type="submit" formmethod="post" formaction="/c.html" name = "bo" value="betr">背叛</button>
+		</form>
+	</div>
+	<div class="nick4">
+		你的对手的编号:{{oppo}}</br>
+		你的编号：{{me}}
+
+	</div>
+<!-- 
+	<div class="nick2">
+		你的分数：0
+	</div>
+	<div class="nick2">
+		你对手的选择：背叛
+	</div> -->
+	
+	<div class=metanav>
+		
+		<div class="nick2">
+			你的分数：{{score}}
+		</div>
+		<div class="nick2">
+			{% if operation==0 %}
+				你对手的选择：合作
+			{% elif operation ==1%}
+				你对手的选择：背叛
+			{% else %}
+				你对手的选择：无
+			{% endif %}
+		</div>
+		
+	</div>
+	<div class="nick3">
+		<table border="1">
+		  <tr>TOP5:
+		    <th>ID</th>
+		    <th>score</th>
+		  </tr>
+		  {% for players in top %}
+		  <tr>
+		  	{% for r in players%}
+		  
+		    <td>{{r}}</td>
+		 
+		  {% endfor %}
+		   </tr>
+		  {% endfor %}
+		</table>
+	<!-- 	<ul> top 5
+			<li>No.1: 3241 socre: 241</li>
+			<li>No.2: 3145 score: 7232</li>
+			<li>No.3: 3301 score: 8413</li>
+			<li>No.4: 891  score: 8413</li>
+			<li>No.5: 8124 score: 8413</li>
+		</ul> -->
+
+		<div class="nick5">
+			<button class="button1" onclick="back()">返回重来</button></br>
+		</div>
+		<div class="nick6">
+			{% if flag == 1%}
+			你已经是唯一的第一名，你可以选择返回重来，也可以选择继续刷分
+			{%else%}
+			{%endif%}
+		</div>
+
+</body>
+<script type="text/javascript">
+	function back(){
+	window.location.href="a.html"
+	}
+</script>
+</html>

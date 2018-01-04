@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" >     
+<meta name="apple-mobile-web-app-capable" content="yes" >    
+<meta name="format-detection" content="telephone=no" >
+<title>Login</title>
+<style type="text/css">
+	/*.nickname{ width:1400px; height:150px;padding-top: 250px; border:0px solid #000; text-align:center;font-size:30px;} */
+	.nickname{ position:relative;left:29em;top:12em;font-size: 1.3em} 
+	/*.input1{ width:1400px; height:150px;padding-top: -200px; border:0px solid #000; text-align:center;} */
+	.input1{ position:relative;left:41em;top:20em;} 
+	.button1{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:relative;left:-746px;top:-300px;
+	}
+</style>
+</head>
+<body bgcolor="#fafcf5">
+<div class="nickname">
+您的随机编号为：{{number}}
+
+</div>
+<div class="nickname">
+您的房间号为为：{{room}}
+
+<div class="nickname">
+<button class="button1" onclick="openw()">开始</button>
+</div>
+<script type="text/javascript">
+
+function openw(){
+	window.location.href="b.html";
+}
+
+</script>
+</body>
+</html>
+

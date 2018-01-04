@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" >     
+<meta name="apple-mobile-web-app-capable" content="yes" >    
+<meta name="format-detection" content="telephone=no" >
+<title>Introduction</title>
+<style type="text/css">
+	/*.nickname{ width:1400px; height:150px;padding-top: 250px; border:0px solid #000; text-align:center;font-size:30px;} */
+	.nickname{ position:relative;left:20em;top:4em;font-size: 1.3em} 
+	/*.input1{ width:1400px; height:150px;padding-top: -200px; border:0px solid #000; text-align:center;} */
+	.input1{ position:relative;left:41em;top:20em;} 
+	.button1{
+    background-color: #000000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    position:relative;left:200px;top:20px;
+    }
+   /* .fade_in{
+        position:relative;left:20em;top:4em;font-size: 1.3em;
+    }*/
+    @-webkit-keyframes fade-in {/*针对webkit内核*/  
+            0% {opacity: 0;}  
+            40% {opacity: 0;}  
+            100% {opacity: 1;}  
+        }  
+    .fade_in1 {   
+            position:relative;left:20em;top:4em;font-size: 1.3em; 
+            animation: fade-in;/*动画名称*/  
+            animation-duration: 1.5s;/*动画持续时间*/  
+            -webkit-animation:fade-in 0.5s;/*针对webkit内核*/  
+        } 
+    .fade_in2 {   
+        position:relative;left:20em;top:4em;font-size: 1.3em; 
+        animation: fade-in;/*动画名称*/  
+        animation-duration: 1.5s;/*动画持续时间*/  
+        -webkit-animation:fade-in 1.5s;/*针对webkit内核*/  
+        } 
+    .fade_in3 {   
+    position:relative;left:20em;top:4em;font-size: 1.3em; 
+    animation: fade-in;/*动画名称*/  
+    animation-duration: 1.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 2.5s;/*针对webkit内核*/  
+    } 
+    .fade_in4 {   
+    position:relative;left:20em;top:4em;font-size: 1.3em; 
+    animation: fade-in;/*动画名称*/  
+    animation-duration: 1.5s;/*动画持续时间*/  
+    -webkit-animation:fade-in 3.5s;/*针对webkit内核*/  
+    } 
+</style>
+</head>
+<body bgcolor="#fafcf5">
+<div class="fade_in1">
+在一个月黑风高的夜晚，你独自一人走在路上。</br>
+不幸的是，你被一个无良数据科学家绑架了。</br>
+</div>
+<div class="fade_in2">
+这里已经有很多人被绑架，每个人都被随机分配编号和房间。</br>
+无良数据科学家要求你和他进行一场游戏。</br>
+同一个只有进入排行榜才可以被成功释放，而没有进入排行榜将永远呆在这里……</br>
+</div>
+</br>
+<div class="fade_in3">
+<em>游戏规则：</em></br>
+玩家每次随机到一个对手，双方只进行一次比拼，完成后便立刻切换对手。</br>
+由于房间内的对手有限，所以玩家很可能重复遇到同一个对手。</br>
+</div>
+<div class="fade_in4">
+如果双方都选择合作，则都会加2分，</br>
+如果一人合作一人背叛，则背叛者加3分，合作者-1分，</br>
+如果双方都背叛，则都得0分。</br>
+最终得分最高且唯一者可以被释放。</br>
+PS.每人只能看到和自己一个房间的对手的排行。</br>
+</div>
+
+<div class="nickname">
+<button class="button1" onclick="openw()">开始</button>
+</div>
+<script type="text/javascript">
+function openw(){
+
+    window.location.href='a.html';
+}
+
+</script>
+</body>
+</html>
+

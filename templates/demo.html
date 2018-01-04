@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<title>原创html5响应式游戏排行版css3效果</title>
+<link rel="stylesheet" type="text/css" href="css/style.css?v=67">
+</head>
+<body>
+<header>
+  <div id="navbar" class="fixed"><a href="http://www.jq-school.com/" id="back" class="left_icon"></a>排行榜</div>
+</header>
+<div class="clear h10"></div>
+
+<article id="rankList">
+<span id="myRank" style="display:block; width:50%; margin:0 auto; height:30px; line-height:30px; color:#fff; font-size:13px; font-weight:bold; background:#fb9605;border-radius:7px; text-align:center; margin-top:-17px;">我的排行：4</span>
+<div id="gdt" style=" width:100%;overflow:auto;">
+  <section class="rank"> <span class="column1">1</span><span class="column2" ><img src="images/pic.jpg" width="40" height="40" /></span><span class="column3">1234F</span><span class="column4">5000</span> </section>
+  <section class="rank"> <span class="column1">2</span><span class="column2" ><img src="images/pic.jpg" width="40" height="40" /></span><span class="column3">123</span><span class="column4">5000</span> </section>
+  <section class="rank"> <span class="column1">3</span><span class="column2" ><img src="images/pic.jpg" width="40" height="40" /></span><span class="column3">345</span><span class="column4">5000</span> </section>
+  <section class="rank"> <span class="column1">4</span><span class="column2" ><img src="images/pic.jpg" width="40" height="40" /></span><span class="column3">234</span><span class="column4">5000</span> </section>
+  <section class="rank"> <span class="column1">5</span><span class="column2" ><img src="images/pic.jpg" width="40" height="40" /></span><span class="column3">567</span><span class="column4">5000</span> </section>
+  <section class="rank"> <span class="column1">6</span><span class="column2" ><img src="images/pic.jpg" width="40" height="40" /></span><span class="column3">179</span><span class="column4">5000</span> </section>
+  <section class="rank"> <span class="column1">7</span><span class="column2" ><img src="images/pic.jpg" width="40" height="40" /></span><span class="column3">237</span><span class="column4">5000</span> </section>
+  <section class="rank"> <span class="column1">8</span><span class="column2" ><img src="images/pic.jpg" width="40" height="40" /></span><span class="column3">098</span><span class="column4">5000</span> </section>
+  <section class="rank"> <span class="column1">9</span><span class="column2" ><img src="images/pic.jpg" width="40" height="40" /></span><span class="column3">1345</span><span class="column4">5000</span> </section>
+  </div>
+  <a id="playGame" href="playGame.html" style="display:block; width:50%; margin:0 auto; height:40px; line-height:40px; color:#fff; font-size:13px; font-weight:bold; background:#fb9605;border-radius:7px; text-align:center; margin-bottom:-22px; text-decoration:none;">开始游戏</a>
+</article>
+<div style="display:none;">
+  <span style="font-size:15px; font-weight:bold;  line-height:25px; color:#000; width:100%">原创html5响应式游戏排行版css3效果<br />
+  <a href="http://www.jq-school.com" target="_blank" style="color:#000">JquerySchool</a>网站出品（<a href="http://www.jq-school.com" style="color:#000" target="_blank">http://www.jq-school.com</a>） <br />
+   <a href="http://api.jq-school.com/" target="_blank" style="color:#000">在线API帮助文档</a> <br />
+  <a target="_blank" href="http://wp.qq.com/wpa/qunwpa?idkey=47d9817e9e09f61b288b8ad6d33fb18cbd659ca6773f663918d6e5d3a2981a12">官方网站学习交流QQ群<img border="0" src="http://pub.idqqimg.com/wpa/images/group.png" style="width:90px; height:22px;" alt="jquery学堂3群群" width="90" height="22" title="jquery学堂3群"></a></span>
+</div>
+<script type="text/javascript">
+		window.onload = function() {
+			setHeight();
+		}
+		window.onresize = function() {
+			setHeight();
+		}
+
+		function setHeight() {
+			document.getElementById("gdt").style.height = document.body.clientHeight-120+"px";
+		}
+	</script>
+</body>
+</html>
